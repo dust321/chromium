@@ -1,6 +1,9 @@
 # random is good for you
 /dev/urandom r
 
+# needed for chromium
+/etc/chromium r
+
 # needed for fontconfig
 /etc/fonts r
 
