@@ -1,0 +1,32 @@
+/usr/local r
+/dev rw
+
+# might not be needed, needs more testing
+#/etc r
+
+# needed for fontconfig
+/etc/fonts r
+
+# taken care of by pledge("dns")
+/etc/hosts r
+/etc/resolv.conf r
+
+# taken care of by pledge("tmppath")
+/tmp rwc
+
+/var/cache/fontconfig r
+
+# needs /var/run in case /var/run/dbus is not available
+/var/run rw
+
+# ~ gets expaneded to $HOME
+~/.Xauthority r
+~/.Xdefaults r
+~/.Xdefaults-x220.nerd.hu r
+~/.cache rwc
+~/.fontconfig rwc
+~/.config rwc
+~/.pki rwc
+~/.config/gtk-3.0 r
+~/.local rwc
+~/Downloads rwc
