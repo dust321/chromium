@@ -1,6 +1,9 @@
 # random is good for you
 /dev/urandom r
 
+# needed for the main process for initialization
+/dev/drm0 rw
+
 # needed for chromium
 /etc/chromium r
 
@@ -21,6 +24,10 @@
 
 # fontconfig
 /var/cache/fontconfig r
+
+# drm and misc xorg stuff
+/usr/X11R6/lib r
+/usr/X11R6/share r
 
 # needs /var/run in case /var/run/dbus is not available
 # needed by messagebus
