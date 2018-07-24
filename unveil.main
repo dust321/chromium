@@ -1,9 +1,3 @@
-# random is good for you
-/dev/urandom r
-
-# needed for the main process for initialization
-/dev/drm0 rw
-
 # needed for chromium
 /etc/chromium r
 
