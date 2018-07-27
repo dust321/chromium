@@ -4,16 +4,12 @@
 # needed for fontconfig
 /etc/fonts r
 
-# needed for resolving
-/etc/hosts r
-/etc/resolv.conf r
-
 # needed for IPC communication, X.Org, etc.
 /tmp rwc
 
 # misc. files and libraries
 /usr/local/lib r
-/usr/local/chrome r
+/usr/local/chrome rx
 /usr/local/share r
 
 # fontconfig
