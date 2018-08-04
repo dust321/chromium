@@ -32,5 +32,5 @@
 ~/.pki rwc
 ~/.config/gtk-3.0 r
 ~/.local rwc
-~/.aucat_cookie rw
+~/.sndio/cookie rw
 ~/Downloads rwc
